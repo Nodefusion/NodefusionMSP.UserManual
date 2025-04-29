@@ -3,7 +3,8 @@
 ## Onboarding Device - Windows
 
 1. If a device is not Brand / OEM then (re)install Windows
-    * Use specific internal procedure, windows image etc. Keep in mind for secure boot to setup mode. EFI partition to be above 260 MB due to EFI firmware updgrades etc.
+
+    Use specific internal procedure, windows image etc. Keep in mind for secure boot to setup mode. EFI partition to be above 260 MB due to EFI firmware upgrades etc.
 
 1. Make sure that correct BIOS/EFI settings are configured, like:
     1. Enable Secure Boot
@@ -14,7 +15,7 @@
 
 1. If company owned device and using Intune, then Enroll device to Windows Autopilot
 
-    On fresh Windows installation and OOBE screen proceed with Shift+F10 to open CMD and get Autopilot info. Need to know your GroupTag as per organization policy.
+    On fresh Windows installation and OOBE screen proceed with Shift+F10 to open CMD and get Autopilot info. Need to specify your GroupTag as per organization policy.
 
     ```powershell
     PowerShell.exe -ExecutionPolicy RemoteSigned
@@ -32,6 +33,7 @@
     If Option B is used, use import on Intune Admin Center > Enrollment > Windows Devices with proper account which has Intune Admin permissions
 
 1. Windows Out-Of-Box Experience (OOBE), go with one scenario:
+
     * Scenario A - Intune on Company owned device for one primary user (using Windows Autopilot - user driven deployment)
         1. Should not ask for initial language, if it asks, wait and reboot
         1. If Microsoft Entry hybrid - be connected to local network and connectivity to Domain Controller
@@ -51,8 +53,9 @@
         1. If using, hybrid or on-prem, move Windows Server Active Directory - Computer object to corresponding AD Organization Unit
 
 1. After OOBE which includes Intune enrollment and/or domain join, users can do the first login on Windows sign-in prompt:
+
     * If using hybrid, use Windows Server Active directory username or password
-    * If using cloud-only, use Microsoft Entra account. Can use web-sign with Microsoft authenticator, or temporary access pass
+    * If using cloud-only, use Microsoft Entra account. Should use the web-sign option (available in a while after policy is deployed) with sign-in from temporary access pass (from IT admin, preferred) or with Microsoft authenticator
 
 1. After end-user first login, end-user need to setup Windows Hello for Business where use minimum PIN (additional options fingerprint, face recognition etc.). In future logins use username and PIN as minimum.
 
@@ -68,23 +71,23 @@
 1. Log in with user account and TAP
 1. Next set PIN/Password
 1. "Install Work Apps", choose Next
-1. On "Register your device" select Set-up and login with your MS account with TAP, and when registaration is complete click "Done"
-1. Give Google Services permisions (locatio, diagnostic data etc...) and klick on "Accept"
-1. Agree to End user Licence Agreement and click "Next"
+1. On "Register your device" select Set-up and login with your MS account with TAP, and when registration is complete click "Done"
+1. Give Google Services permissions (location, diagnostic data etc...) and click on "Accept"
+1. Agree to End user License Agreement and click "Next"
 1. Configure Microsoft Authenticator app (login with company account and then register authenticator with company)
 1. Login to Microsoft Defender (if already logged in with company account account should be present, just select it) and give it requested  permissions, wait for the scan to complete
-1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account account should be present, just select it))
+1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account account should be present, just select it)
 
 ## Onboarding Device - Android Personally-owned devices with work profile
 
 1. Install Intune Company Portal from Google Play store, <https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal>
 1. Login to Company Portal (using Microsoft Entra with TAP) and within Company portal:
-1. Create work profile
-1. Activate work profile
-1. On last step resolve any warnings and Confirm Device settings
+    1. Create work profile
+    1. Activate work profile
+    1. On last step resolve any warnings and Confirm Device settings
 1. Configure Microsoft Authenticator app (login with company account and then register authenticator with company)
 1. Login to Microsoft Defender (if already logged in, company account account should be present, just select it)
-1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account account should be present, just select it))
+1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account account should be present, just select it)
 
 ## Onboarding Device - iOS web based enrollment
 
@@ -98,12 +101,12 @@ Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-u
 1. Confirm installation of default apps when prompted
 1. Configure Microsoft Authenticator app (login with company account and then register authenticator with company)
 1. Login to Microsoft Defender (if already logged in with company account account should be present, just select it)
-1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account account should be present, just select it))
+1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account account should be present, just select it)
 
 ## Onboarding User - Windows Users Profile
 
 1. After first Windows sign in - configure Windows Hello, PIN, and optionally FingerPrint, Face Recognition
-1. If using Lenovo notebook, configure Lenovo Vantage, setting  Device > Power > Battery charge Treshold: On
+1. If using Lenovo notebook, configure Lenovo Vantage, setting: Device > Power > Battery charge threshold: On
 1. Install Other apps if needed from [Microsoft Intune Web Company Portal](https://portal.manage.microsoft.com/)
     1. Devices > Choose active this current device
     1. Apps > filter Availability: Device management required. Install apps:
@@ -120,10 +123,10 @@ Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-u
     * Mail > Compose and reply:
         * Configure "My signature"
         * Select default signatures: for new messages
-        * Message format: Alyways show Bcc, Always show From
+        * Message format: Always show Bcc, Always show From
         * Reply All
     * Calendar > View
-        * Calendar appereance - Monday
+        * Calendar appearance - Monday
         * Time zones: Zagreb
     * Calendar > Events and invitations - Invitations from other people - Turn Off "Delete.."
     * Go to Outlook Places, set work location to Office
