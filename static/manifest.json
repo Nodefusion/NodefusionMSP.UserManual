@@ -17,13 +17,13 @@
     "description": "Nodefusion MSP User documentation",
     "screenshots": [
       {
-        "src": "/img/screenshot1.png",
-        "type": "image/png",
+        "src": "/img/screenshot1.jpeg",
+        "type": "image/jpeg",
         "sizes": "1220x768",
         "form_factor": "wide"
       },
       {
-        "src": "/images/screenshot2.jpeg",
+        "src": "/img/screenshot2.png",
         "type": "image/png",
         "sizes": "256x568",
         "form_factor": "narrow"
