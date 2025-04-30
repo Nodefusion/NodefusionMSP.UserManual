@@ -151,13 +151,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/msp-logo.png',
+      image: 'img/NFN - portal logo reactive.svg',
       navbar: {
         title: 'Introduction',
         logo: {
           alt: 'MSP',
-          src: 'img/msp-logo-heading-light.svg',
-          srcDark: 'img/msp-logo-heading-dark.svg',
+          src: 'img/\NFN - portal logo light.svg',
+          srcDark: 'img/NFN - portal logo dark.svg',          
         },
         items: [
           {
