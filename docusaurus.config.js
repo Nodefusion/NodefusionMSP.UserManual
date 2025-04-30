@@ -14,6 +14,69 @@ const config = {
   tagline: 'NodefusionMSP.UserManual',
   favicon: 'img/favicon.ico',
 
+  plugins: [
+    [
+      'pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'saveData',
+          'queryString',
+          'standalone'
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/nodefusion-account.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json',
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: '#d37352',
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-capable',
+            content: 'yes',
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-status-bar-style',
+            content: '#d37352',
+          },
+          {
+            tagName: 'link',
+            rel: 'apple-touch-icon',
+            href: '/img/nodefusion-account.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'mask-icon',
+            href: '/img/nodefusion-account.png',
+            color: '#d37352',
+          },
+          {
+            tagName: 'meta',
+            name: 'msapplication-TileImage',
+            content: '/img/nodefusion-account.png',
+          },
+          {
+            tagName: 'meta',
+            name: 'msapplication-TileColor',
+            content: '#d37352',
+          },
+        ],
+      },
+    ],
+  ],
+
   // Set the production url of your site here
   url: 'https://msp-manual.nodefusion.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -51,6 +114,16 @@ const config = {
           editUrl:
             'https://github.com/Nodefusion/NodefusionMSP.Manual/tree/main/',
         },
+        gtag: {
+          trackingID: 'G-J3J5LDGC9Z',
+        },
+        googleTagManager: {
+          containerId: 'GTM-MS2L8JWB',
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          lastmod: 'datetime',
+        },
         // blog: {
         //   showReadingTime: true,
         //   feedOptions: {
@@ -82,7 +155,7 @@ const config = {
       navbar: {
         title: 'Introduction',
         logo: {
-          alt: 'Aexum',
+          alt: 'MSP',
           src: 'img/msp-logo-heading-light.svg',
           srcDark: 'img/msp-logo-heading-dark.svg',
         },
@@ -134,6 +207,7 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Nodefusion`,
+
       },
       prism: {
         theme: prismThemes.github,

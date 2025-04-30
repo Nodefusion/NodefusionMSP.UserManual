@@ -80,7 +80,7 @@
 
 ## Onboarding Device - Android Personally-owned devices with work profile
 
-1. Install Intune Company Portal from Google Play store, <https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal>
+1. Install Intune Company Portal from Google Play store, [https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
 1. Login to Company Portal (using Microsoft Entra with TAP) and within Company portal:
     1. Create work profile
     1. Activate work profile
