@@ -1,8 +1,15 @@
 # Nodefusion MSP User Manual
 
-![Aexum](static/img/aexum-logo-heading-light.svg#gh-light-mode-only)![Nodefusion MSP](static/img/aexum-logo-heading-dark.svg#gh-dark-mode-only)
+This is the repository for the Nodefusion IT Managed Service Provider User Manual.
 
-This is the repository for the Nodefusion IT Managed Service Provider User Manual, using docusaurus.
+## Publish
+
+<https://msp-manual.nodefusion.com/>
+
+## Using
+
+* [Node.js](https://nodejs.org/)
+* [Docusaurus](https://docusaurus.io)
 
 ## Building and running
 
