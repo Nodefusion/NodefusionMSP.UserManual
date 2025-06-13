@@ -26,13 +26,13 @@
     Get-WindowsAutopilotInfo -GroupTag "Shared" -Online 
     
     # Option B - Get info to file
-    Get-WindowsAutopilotInfo -GroupTag "Default" -OutputFile C:\AutopilotHWID.csv 
+    Get-WindowsAutopilotInfo -GroupTag "Default" -OutputFile C:\https://github.com/Nodefusion/NodefusionMSP.UserManual.git 
     Get-WindowsAutopilotInfo -GroupTag "Shared" -OutputFile C:\AutopilotHWID.csv 
     ```
 
-    If Option B is used, use import on Intune Admin Center > Enrollment > Windows Devices with proper account which has Intune Admin permissions
+    If Option B is used, use import on Intune Admin Center, Devices > Enrollment > Windows Autopilot > Devices with proper account which has Intune Admin permissions. On the upper menu select "Import and then selsect "AutoPilot.csv" from previous step.
 
-1. Windows Out-Of-Box Experience (OOBE), go with one scenario:
+1. Windows Out-Of-Box Experience (OOBE = the initial setup process users encounter when first turning on a new Windows computer), go with one scenario:
 
     * Scenario A - Intune on Company owned device for one primary user (using Windows Autopilot - user driven deployment)
         1. Should not ask for initial language, if it asks, wait and reboot
@@ -74,41 +74,42 @@
 1. On "Register your device" select Set-up and login with your MS account with TAP, and when registration is complete click "Done"
 1. Give Google Services permissions (location, diagnostic data etc...) and click on "Accept"
 1. Agree to End user License Agreement and click "Next"
-1. Configure Microsoft Authenticator app (login with company account and then register authenticator with company)
+1. Configure Microsoft Authenticator app (login with Microsoft company account of user that is going to be using device and then register authenticator with company)
 1. Login to Microsoft Defender (if already logged in with company account account should be present, just select it) and give it requested  permissions, wait for the scan to complete
 1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account account should be present, just select it)
 
 ## Onboarding Device - Android Personally-owned devices with work profile
-
+1. Before continuing please login  with the desired Google personal account.
 1. Install Intune Company Portal from Google Play store, [https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
-1. Login to Company Portal (using Microsoft Entra with TAP) and within Company portal:
+1. Login to Company Portal with Microsoft company account of user that is going to be using device (using Microsoft Entra with TAP) and within Company portal:
     1. Create work profile
     1. Activate work profile
     1. On last step resolve any warnings and Confirm Device settings
-1. Configure Microsoft Authenticator app (login with company account and then register authenticator with company)
-1. Login to Microsoft Defender (if already logged in, company account account should be present, just select it)
+1. Configure Microsoft Authenticator app (login with Microsoft company account of user that is going to be using device)
+1. Login to Microsoft Defender and give it required permisions (if already logged in, company account account should be present, just select it)
 1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account account should be present, just select it)
+
 
 ## Onboarding Device - iOS web based enrollment
 
 Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-us/mem/intune-service/enrollment/web-based-device-enrollment-ios)
-
-1. Open Safari and go to https://portal.manage.microsoft.com/enrollment/webenrollment/ios. Sign in with your work or school account (with TAP)
+1. Before continuing please ensure that you have logged in the device with Apple account.
+1. Open Safari and go to https://portal.manage.microsoft.com/enrollment/webenrollment/ios. Login with Microsoft company account of user that is going to be using device (with Temporary Access Password)
 1. On welcome screen select "Get started"
 1. On the next screen download management profile
 1. Open device settings > Profile downloaded> Install profile
 1. Root certificate > Install
 1. Confirm installation of default apps when prompted
-1. Configure Microsoft Authenticator app (login with company account and then register authenticator with company)
-1. Login to Microsoft Defender (if already logged in with company account account should be present, just select it)
-1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account account should be present, just select it)
+1. Configure Microsoft Authenticator app (login with users company account and then register authenticator with company)
+1. Login to Microsoft Defender (if already logged in with company account should be present, just select it)
+1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account should be present, just select it)
 
 ## Onboarding User - Windows Users Profile
 
-1. After first Windows sign in - configure Windows Hello, PIN, and optionally FingerPrint, Face Recognition
+1. After first Windows sign in - configure Windows Hello, PIN, and optionally FingerPrint, Face Recognition in the Settings app
 1. If using Lenovo notebook, configure Lenovo Vantage, setting: Device > Power > Battery charge threshold: On
 1. Install Other apps if needed from [Microsoft Intune Web Company Portal](https://portal.manage.microsoft.com/)
-    1. Devices > Choose active this current device
+    1.In the left upper corner select Devices then Choose this current device
     1. Apps > filter Availability: Device management required. Install apps:
         1. Microsoft 365 Apps
 
