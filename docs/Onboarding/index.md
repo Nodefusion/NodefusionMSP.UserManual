@@ -104,6 +104,14 @@ Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-u
 1. Login to Microsoft Defender (if already logged in with company account should be present, just select it)
 1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account should be present, just select it)
 
+## Onboarding Device - macOS
+
+1. Open Safari browser and go to https://go.microsoft.com/fwlink/?linkid=853070, download Intune Company app package and install it.
+1. Open Intune and login with compan account.
+1. Wait for Intune to download configuration profiles
+1. In order to encrypt drive Intune will ask you to change local user password to numerical (min 6 numbers without seqential nubmers)
+1. navigate to System Preferences > Security & Privacy > FileVault. Then, click "Turn On FileVault"
+
 ## Onboarding User - Windows Users Profile
 
 1. After first Windows sign in - configure Windows Hello, PIN, and optionally FingerPrint, Face Recognition in the Settings app
