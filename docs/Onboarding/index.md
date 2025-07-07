@@ -94,7 +94,7 @@
 
 Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-us/mem/intune-service/enrollment/web-based-device-enrollment-ios)
 
-1. Open Safari and go to <https://portal.manage.microsoft.com/enrollment/webenrollment/ios>. Login with company account of user that is going to be using device (with Temporary Access Password)
+1. Open Safari and go to [https://portal.manage.microsoft.com/enrollment/webenrollment/ios](https://portal.manage.microsoft.com/enrollment/webenrollment/ios). Login with company account of user that is going to be using device (with Temporary Access Password)
 1. On welcome screen select "Get started"
 1. On the next screen download management profile
 1. Open device settings > Profile downloaded> Install profile
@@ -106,7 +106,7 @@ Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-u
 
 ## Onboarding Device - macOS
 
-1. Open Safari browser and go to <https://go.microsoft.com/fwlink/?linkid=853070>, download Intune Company app package and install it.
+1. Open Safari browser and go to [https://go.microsoft.com/fwlink/?linkid=853070](https://go.microsoft.com/fwlink/?linkid=853070), download Intune Company app package and install it.
 1. Open Intune and login with company account
 1. Wait for Intune to download configuration profiles
 1. In order to encrypt drive Intune will ask you to change local user password to numerical (min 6 numbers without sequential numbers)
