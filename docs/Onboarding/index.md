@@ -80,9 +80,16 @@
 
 ## Onboarding Device - Android Personally-owned devices with work profile
 
+1. Register your device to enable passwordless sign in
 1. Before continuing please login  with the desired Google personal account.
+1. Install Microsoft Authenticator on Android device
+1. Add Work or school account> Select "Sign in" option
+1. Login with username and TAP
+1. Let's secure your device> Continue
+1. "Register your device" > Register
+1. Enter device pin/password to complete registration.
 1. Install Intune Company Portal from Google Play store, [https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
-1. Login to Company Portal with company account of user that is going to be using device (using Microsoft Entra with TAP) and within Company portal:
+1. Login to Company Portal with company account of user that is going to be using device (using Microsoft Authenticator) and within Company portal:
     1. Create work profile
     1. Activate work profile
     1. On last step resolve any warnings and Confirm Device settings
