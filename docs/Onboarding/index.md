@@ -80,9 +80,9 @@
 
 ## Onboarding Device - Android Personally-owned devices with work profile
 
-1. Before continuing please login  with the desired Google personal account.
+1. Requirement - [Microsoft Authenticator on Android](https://msp-manual.nodefusion.com/Onboarding/#Onboarding-Microsoft-Authenticator-on-Android)
 1. Install Intune Company Portal from Google Play store, [https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
-1. Login to Company Portal with company account of user that is going to be using device (using Microsoft Entra with TAP) and within Company portal:
+1. Login to Company Portal with company account of user that is going to be using device (using Microsoft Authenticator) and within Company portal:
     1. Create work profile
     1. Activate work profile
     1. On last step resolve any warnings and Confirm Device settings
@@ -111,3 +111,14 @@ Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-u
 1. Wait for Intune to download configuration profiles
 1. In order to encrypt drive Intune will ask you to change local user password to numerical (min 6 numbers without sequential numbers)
 1. navigate to System Preferences > Security & Privacy > FileVault. Then, click "Turn On FileVault"
+
+## Onboarding Microsoft Authenticator on Android
+
+1. Requirement - have Android with logged in Google Account (your personal @gmail.com) in Google Play Store
+1. Download and install [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator) from Google Play Store
+1. Add "Work or school account" > Select "Sign in" option
+1. Enter your organization username/email
+1. Enter Temporary Access Password (TAP) which can be obtained one time from your IT administrator
+1. Let's secure your device > Continue
+1. "Register your device" > Register
+1. Enter your existing Android device PIN/password to complete registration and passwordless sign-in
