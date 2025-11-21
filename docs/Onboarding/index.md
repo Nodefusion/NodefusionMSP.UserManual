@@ -99,7 +99,7 @@
     1. Activate work profile
     1. On last step resolve any warnings and Confirm Device settings
 1. Configure Microsoft Authenticator app (login with organizational account of user that is going to be using device)
-1. Login to Microsoft Defender and give it required permisions (if already logged in, organizational account account should be present, just select it)
+1. Login to Microsoft Defender and give it required permissions (if already logged in, organizational account account should be present, just select it)
 1. Open Outlook and Teams app, check if auto logged in (if already logged in with organizational account account should be present, just select it)
 
 ## Onboarding Device - iOS web based enrollment
