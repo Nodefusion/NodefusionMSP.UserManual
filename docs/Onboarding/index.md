@@ -86,8 +86,8 @@
 1. Give Google Services permissions (location, diagnostic data etc...) and click on "Accept"
 1. Agree to End user License Agreement and click "Next"
 1. Configure Microsoft Authenticator app (login with organizational account of user that is going to be using device and then register authenticator with organization)
-1. Login to Microsoft Defender (if already logged in with organizational account account should be present, just select it) and give it requested  permissions, wait for the scan to complete
-1. Open Outlook and Teams app, check if auto logged in (if already logged in with organizational account account should be present, just select it)
+1. Login to Microsoft Defender (if already logged in with organizational account should be present, just select it) and give it requested  permissions, wait for the scan to complete
+1. Open Outlook and Teams app, check if auto logged in (if already logged in with organizational account should be present, just select it)
 
 ## Onboarding Device - Android Personally-owned devices with work profile
 
