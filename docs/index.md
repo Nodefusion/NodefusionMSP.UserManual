@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Nodefusion IT Managed Service Provider User Manual.
 
-For organization that are using Nodefusion as their IT Managed Service Provider, this manual provides instructions and guidelines for various IT processes including Onboarding and Offboarding of devices and users.
+For organizations that are using Nodefusion as their IT Managed Service Provider, this manual provides instructions and guidelines for various IT processes including Onboarding and Offboarding of devices and users.
 
 [Nodefusion as IT Managed Service Provider](https://www.nodefusion.com/en-us/solutions/managed-service-provider/)
 

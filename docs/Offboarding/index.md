@@ -3,7 +3,7 @@
 
 ## Offboarding Device - Windows
 
-In case, Windows corporate owned device has been sold, donated or recycled on e-waste.
+In case, Windows corporate owned device has been sold, donated or recycled as e-waste.
 
 Windows Autopilot devices and Active Directory Computers:
 
@@ -16,7 +16,7 @@ Windows Autopilot devices and Active Directory Computers:
 
 In case, Android corporate owned device has been sold, or recycled.
 
-1. Go to Intune > Devices > Adroid > Device > Wipe > Yes
+1. Go to Intune > Devices > Android > Device > Wipe > Yes
 1. Check if device has been removed from Intune
 
 ## Offboarding Device - Android Personally-owned devices with work profile
@@ -42,7 +42,7 @@ In case, Windows corporate owned device has been sold, or recycled.
 
 ## Pre-Offboarding user
 
-In case, user is on leaving organization and on notice period, still working. User as per needed.
+In case a user is leaving the organization and is on a notice period, still working. Apply as needed.
 
 1. Enable Exchange mailbox Litigation Hold for 60 days
 

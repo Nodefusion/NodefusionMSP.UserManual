@@ -5,7 +5,7 @@
 1. After first Windows sign in - configure Windows Hello by setting up mandatory PIN and optionally Fingerprint and/or Face Recognition
 
 1. Install additional optional Windows apps if needed from [Microsoft Intune Web Company Portal](https://portal.manage.microsoft.com/)
-    1. Devices > Choose current device to be an active one
+    1. Devices > Select the current device and set it as active
     1. Apps > filter Availability: Device management required. Install apps:
         1. Microsoft 365 Apps
         1. Adobe Reader
@@ -108,7 +108,7 @@ Action: "Move to" : CC folder
 ## Microsoft Teams
 
 * Make sure that, on your mobile Teams application, notifications are blocked when active on desktop
-* In Teams - pin channels that you use most often (example on "Productivity Team" > General)
+* In Teams - pin channels that you use most often (example Productivity Team > General)
 * In Teams channels, set notifications to All Activity for your primary Groups / channels (example Administration Team > Cases)
 
 ## Digital Communication & Collaboration Guidelines

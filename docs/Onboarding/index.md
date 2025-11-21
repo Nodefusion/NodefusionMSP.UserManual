@@ -68,7 +68,7 @@
 1. Enter Temporary Access Password (TAP) which can be obtained one time from your IT Administrator
 1. Let's secure your device > Continue
 1. "Register your device" > Register
-1. Enter your existing Android device PIN/password to complete registration and passwordless (phone) sign-in
+1. Enter your existing Android device PIN/password to complete registration and phone-based passwordless sign-in
 
 ## Onboarding Device - Android Corporate-owned, Fully managed user devices
 
