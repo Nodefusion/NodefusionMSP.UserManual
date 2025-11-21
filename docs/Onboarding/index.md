@@ -13,7 +13,7 @@
     1. Enable Microsoft Pluton (if available)
     1. Specific other hardware vendor settings
 
-1. If company owned device and using Intune, then Enroll device to Windows Autopilot
+1. If organization owned device and using Intune, then Enroll device to Windows Autopilot
 
     On fresh Windows installation and OOBE screen proceed with Shift+F10 to open CMD and get Autopilot info. Need to specify your GroupTag as per organization policy.
 
@@ -34,12 +34,12 @@
 
 1. Windows Out-Of-Box Experience (OOBE = the initial setup process users encounter when first turning on a new Windows computer), go with one scenario:
 
-    * Scenario A - Intune on Company owned device for one primary user (using Windows Autopilot - user driven deployment)
+    * Scenario A - Intune on organization owned device for one primary user (using Windows Autopilot - user driven deployment)
         1. Should not ask for initial language, if it asks, wait and reboot
         1. If Microsoft Entry hybrid - be connected to local network and connectivity to Domain Controller
         1. End-user sign-in with Microsoft Entra account. Can use Microsoft Authenticator, or (preferred) temporary access pass provided by IT admin
         1. Computer will start MDM/Intune enrollment (if hybrid, also local domain join)
-    * Scenario B - Intune on Company owned device for shared user scenario (without primary user) (using Windows Autopilot - self-deployment)
+    * Scenario B - Intune on organization owned device for shared user scenario (without primary user) (using Windows Autopilot - self-deployment)
         1. Should not ask for initial language, if it asks, wait and reboot
         1. If Microsoft Entry hybrid - be connected to local network and connectivity to Domain Controller
         1. Computer will start MDM/Intune enrollment (if hybrid, also local domain join)
@@ -59,13 +59,24 @@
 
 1. After end-user first login, end-user need to setup Windows Hello for Business where use minimum PIN (additional options fingerprint, face recognition etc.). In future logins use username and PIN as minimum.
 
+## Onboarding Microsoft Authenticator on Android
+
+1. Requirement - have Android with logged in Google Account (your personal @gmail.com) in Google Play Store
+1. Download and install [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator) from Google Play Store
+1. Add "Work or school account" > Select "Sign in" option
+1. Enter your organization username/email
+1. Enter Temporary Access Password (TAP) which can be obtained one time from your IT Administrator
+1. Let's secure your device > Continue
+1. "Register your device" > Register
+1. Enter your existing Android device PIN/password to complete registration and phone-based passwordless sign-in
+
 ## Onboarding Device - Android Corporate-owned, Fully managed user devices
 
 1. Must be factory reset
 1. On language prompt, tap few times on right blank space to open enrollment
 1. Scan QR code - Corporate Device Enrollment Token
 1. connect device to WiFi or mobile internet
-1. This device belongs to your organization> Next
+1. This device belongs to your organization > Next
 1. Setup your phone > Continue
 1. This device isn't private > Next
 1. Log in with user account and TAP
@@ -74,51 +85,63 @@
 1. On "Register your device" select Set-up and login with your MS account with TAP, and when registration is complete click "Done"
 1. Give Google Services permissions (location, diagnostic data etc...) and click on "Accept"
 1. Agree to End user License Agreement and click "Next"
-1. Configure Microsoft Authenticator app (login with company account of user that is going to be using device and then register authenticator with company)
-1. Login to Microsoft Defender (if already logged in with company account account should be present, just select it) and give it requested  permissions, wait for the scan to complete
-1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account account should be present, just select it)
+1. Configure Microsoft Authenticator app (login with organizational account of user that is going to be using device and then register authenticator with organization)
+1. Login to Microsoft Defender (if already logged in with organizational account should be present, just select it) and give it requested  permissions, wait for the scan to complete
+1. Open Outlook and Teams app, check if auto logged in (if already logged in with organizational account should be present, just select it)
 
 ## Onboarding Device - Android Personally-owned devices with work profile
 
-1. Requirement - [Microsoft Authenticator on Android](https://msp-manual.nodefusion.com/Onboarding/#onboarding-microsoft-authenticator-on-android)
-1. Install Intune Company Portal from Google Play store, [https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
-1. Login to Company Portal with company account of user that is going to be using device (using Microsoft Authenticator) and within Company portal:
+1. Prerequisite - Have working personal Android device with Google Account logged in Google Play Store
+1. Prerequisite - [Microsoft Authenticator on Android](https://msp-manual.nodefusion.com/Onboarding/#onboarding-microsoft-authenticator-on-android)
+1. Install Microsoft Intune Company Portal from Google Play store, [https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
+1. Login to Company Portal with organizational account of user that is going to be using device (using Microsoft Authenticator) and within Company portal:
     1. Create work profile
     1. Activate work profile
     1. On last step resolve any warnings and Confirm Device settings
-1. Configure Microsoft Authenticator app (login with company account of user that is going to be using device)
-1. Login to Microsoft Defender and give it required permisions (if already logged in, company account account should be present, just select it)
-1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account account should be present, just select it)
+1. Configure Microsoft Authenticator app (login with organizational account of user that is going to be using device)
+1. Login to Microsoft Defender and give it required permissions (if already logged in, organizational account account should be present, just select it)
+1. Open Outlook and Teams app, check if auto logged in (if already logged in with organizational account account should be present, just select it)
 
 ## Onboarding Device - iOS web based enrollment
 
 Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-us/mem/intune-service/enrollment/web-based-device-enrollment-ios)
 
-1. Open Safari and go to [https://portal.manage.microsoft.com/enrollment/webenrollment/ios](https://portal.manage.microsoft.com/enrollment/webenrollment/ios). Login with company account of user that is going to be using device (with Temporary Access Password)
+1. Open Safari and go to [https://portal.manage.microsoft.com/enrollment/webenrollment/ios](https://portal.manage.microsoft.com/enrollment/webenrollment/ios). Login with organizational account of user that is going to be using device (with Temporary Access Password)
 1. On welcome screen select "Get started"
 1. On the next screen download management profile
 1. Open device settings > Profile downloaded> Install profile
 1. Root certificate > Install
 1. Confirm installation of default apps when prompted
-1. Configure Microsoft Authenticator app (login with users company account and then register authenticator with company)
-1. Login to Microsoft Defender (if already logged in with company account should be present, just select it)
-1. Open Outlook and Teams app, check if auto logged in (if already logged in with company account should be present, just select it)
+1. Configure Microsoft Authenticator app (login with users organizational account and then register authenticator with organization)
+1. Login to Microsoft Defender (if already logged in with organizational account should be present, just select it)
+1. Open Outlook and Teams app, check if auto logged in (if already logged in with organizational account should be present, just select it)
 
 ## Onboarding Device - macOS
 
-1. Open Safari browser and go to [https://go.microsoft.com/fwlink/?linkid=853070](https://go.microsoft.com/fwlink/?linkid=853070), download Intune Company app package and install it.
-1. Open Intune and login with company account
+1. Open Safari web browser and go to [https://go.microsoft.com/fwlink/?linkid=853070](https://go.microsoft.com/fwlink/?linkid=853070), download Microsoft Intune Company app package and install it
+1. Open Intune and login with organizational account
 1. Wait for Intune to download configuration profiles
 1. In order to encrypt drive Intune will ask you to change local user password to numerical (min 6 numbers without sequential numbers)
 1. navigate to System Preferences > Security & Privacy > FileVault. Then, click "Turn On FileVault"
 
-## Onboarding Microsoft Authenticator on Android
+## Onboarding User - Windows Server Active Directory + Microsoft Entra (Microsoft hybrid environment)
 
-1. Requirement - have Android with logged in Google Account (your personal @gmail.com) in Google Play Store
-1. Download and install [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator) from Google Play Store
-1. Add "Work or school account" > Select "Sign in" option
-1. Enter your organization username/email
-1. Enter Temporary Access Password (TAP) which can be obtained one time from your IT administrator
-1. Let's secure your device > Continue
-1. "Register your device" > Register
-1. Enter your existing Android device PIN/password to complete registration and passwordless sign-in
+* Create a user inside Windows Server Active Directory with valid attributes (First Name, Last Name, Display Name, Department, Job Title, Company Name, Office Location, City, Employee ID, Hire Date etc.)
+* Common username is the same as primary email address
+* Configure ProxyAddress
+* Set Manager
+* Add User to other AD Distribution Groups or Security Groups as per organization policy
+* Start Domain Controller sync/replication
+* Start Microsoft Entra Connect sync
+* Add user to other cloud only groups, such as Distribution Groups, Security Groups or Microsoft 365 Groups as per organization policy
+* Assign a license (through Group membership is preferred)
+* Enable mailbox auditing
+
+## Onboarding User - Microsoft Entra (Microsoft cloud only environment)
+
+* Create a User inside Microsoft Entra with valid attributes (First Name, Last Name, Display Name, Department, Job Title, Company Name, Office Location, City, Employee ID, Usage Location, Hire Date etc.)
+* Common username is the same as primary email address
+* Set Manager
+* Add User to other Distribution Groups, Security Groups or Microsoft 365 Groups as per organization policy
+* Assign a license (through Group membership is preferred)
+* Enable mailbox auditing
