@@ -12,6 +12,7 @@
     1. Enable Virtualization Technology
     1. Enable Microsoft Pluton (if available)
     1. Specific other hardware vendor settings
+    1. Reset Secure boot to SETUP MODE
 
 1. If organization owned device and using Intune, then Enroll device to Windows Autopilot
 
