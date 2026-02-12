@@ -122,8 +122,8 @@ Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-u
 1. Open Safari web browser and go to [https://go.microsoft.com/fwlink/?linkid=853070](https://go.microsoft.com/fwlink/?linkid=853070), download Microsoft Intune Company app package and install it
 1. Open Intune and login with organizational account
 1. Wait for Intune to download configuration profiles
-1. In order to encrypt drive Intune will ask you to change local user password to numerical (min 6 numbers without sequential numbers)
-1. navigate to System Preferences > Security & Privacy > FileVault. Then, click "Turn On FileVault"
+1. After loging it/out twice you will be asked to Enable FileVault encryption,  select "Enable Now"
+1. Your recovery key will be displayed, please note it somewhere. 
 
 ## Onboarding User - Windows Server Active Directory + Microsoft Entra (Microsoft hybrid environment)
 
