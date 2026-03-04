@@ -127,19 +127,20 @@ Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-u
 
 ## Onboarding Device - macOS iCloud Keychain with PassKey
 
-1. Prerequisite: be logged int with your Apple account on your device in System Settings app
+Prerequisite: On macOS System Settings app be logged in with your Apple account
+
 1. Open Web Browser (Safari) link [https://mysignins.microsoft.com/security-info](https://mysignins.microsoft.com/security-info)
 1. Log in with your work account and TAP (given to you by your administrator)
 1. Add sign-in method > Passkey
 1. "Sign in faster with your face, fingerprint, or PIN" > Next
 1. "Setting up your passkey..." > Next
-1. When prompted to "Add a passkey", select ot save it in Passwords app and Touch ID to Save Passkey
+1. When prompted to "Add a passkey", select to save it in Passwords app and Touch ID to Save Passkey
 1. After your passkey is created you will be prompted to name your passkey so enter a name for it or just leave name as is and click Next and wait for passkey to be created
 1. Next time you login to work Microsoft account select your pass key as authentication method
 
 ## Onboarding Device - macOS Microsoft Defender
 
-1.Prerequisite:  You should have local admin privileges on the device
+Prerequisite: You should have local admin privileges on the device
 
 1. Download Installation package (wdav.pkg) and Onboarding package (GatewayWindowsDefenderATPOnboardingPackage.zip) from your email.
 1. Extract Onboarding package GatewayWindowsDefenderATPOnboardingPackage.zip
@@ -147,7 +148,7 @@ Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-u
 1. When prompted open system settings and enable Microsoft Defender Endpoint Security Extension and Microsoft Defedender Network Extension and confirm with password or fingerprint, also when prompted Allow Defender to Filter Network Content
 1. Open System settings app > Privacy and Security > Full Disk Access
 1. Enable Microsoft Defender and Microsoft Defender Endpoint Security Extension
-1. Open Terminal app, run Onboarding package with elevated, with this command: "sudo bash  Downloads/MicrosoftDefenderATPOnboardingMacOs.sh", when asked confirm with password
+1. Open Terminal app, run Onboarding package with elevated, with this command: "sudo bash Downloads/MicrosoftDefenderATPOnboardingMacOs.sh", when asked confirm with password
 1. After onboarding Microsoft Defender icon it should have a checkbox next to it, which means it is onboarded
 
 ## Onboarding User - Windows Server Active Directory + Microsoft Entra (Microsoft hybrid environment)
