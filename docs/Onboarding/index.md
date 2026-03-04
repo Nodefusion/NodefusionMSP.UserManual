@@ -127,8 +127,7 @@ Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-u
 
 ## Onboarding Device - macOS iCloud Keychain with PassKey
 
-Prerequisite: be logged int with your Apple account on your device
-
+1. Prerequisite: be logged int with your Apple account on your device in System Settings app
 1. Open Safari and go to:  https://mysignins.microsoft.com/security-info
 1. Log in with your work account and TAP (given to you by your administrator)
 1. Add sign-in method > Passkey 
@@ -140,16 +139,16 @@ Prerequisite: be logged int with your Apple account on your device
 
 ## Onboarding Device - macOS Microsoft Defender
 
-1. Download Installation package (wdav.pkg) and Onboarding package (GatewayWindowsDefenderATPOnboardingPackage.zip)
-1. Transfer both packages to your macOS device and extract when needed.
-1. You should have local admin privileges on the device
+1.Prerequisite:  You should have local admin privileges on the device
+
+1. Download Installation package (wdav.pkg) and Onboarding package (GatewayWindowsDefenderATPOnboardingPackage.zip) from your email.
+1. Extract Onboarding package (GatewayWindowsDefenderATPOnboardingPackage.zip)
 1. Klick on installation package to install it
 1. When prompted open system settings and enable Microsoft Defender Endpoint Security Extension and Microsoft Defedender Network Extension and confirm with password or fingerprint, also when prompted Allow Defender to Filter Network Content
 1. Open System settings app > Privacy and Security > Full Disk Access
 1. Enable Microsoft Defender and Microsoft Defender Endpoint Security Extension
-1. Open Terminal app and navigate to location of Onboarding package
-1. Start Onboarding package with this command: "sudo bash  MicrosoftDefenderATPOnboardingMacOs.sh", when asked confirm with password
-1. After onboarding Microsoft Defender it should have a check next to it, which means it is onboarded
+1. Open Terminal app and run Onboarding package with this command: "sudo bash  Downloads/MicrosoftDefenderATPOnboardingMacOs.sh", when asked confirm with password
+1. After onboarding Microsoft Defender icon it should have a checkbox next to it, which means it is onboarded
 
 
 ## Onboarding User - Windows Server Active Directory + Microsoft Entra (Microsoft hybrid environment)
