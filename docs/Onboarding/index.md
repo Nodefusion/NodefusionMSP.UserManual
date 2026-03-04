@@ -117,13 +117,40 @@ Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-u
 1. Login to Microsoft Defender (if already logged in with organizational account should be present, just select it)
 1. Open Outlook and Teams app, check if auto logged in (if already logged in with organizational account should be present, just select it)
 
-## Onboarding Device - macOS
+## Onboarding Device - macOS fully managed
 
 1. Open Safari web browser and go to [https://go.microsoft.com/fwlink/?linkid=853070](https://go.microsoft.com/fwlink/?linkid=853070), download Microsoft Intune Company app package and install it
 1. Open Intune and login with organizational account
 1. Wait for Intune to download configuration profiles
 1. After loging it/out twice you will be asked to Enable FileVault encryption,  select "Enable Now"
-1. Your device recovery key will be displayed on screen, please save it on safe place. 
+1. Your device recovery key will be displayed on screen, please save it on safe place.
+
+## Onboarding Device - macOS iCloud Keychain with PassKey
+
+Prerequisite: be logged int with your Apple account on your device
+
+1. Open Safari and go to:  https://mysignins.microsoft.com/security-info
+1. Log in with your work account and TAP (given to you by your administrator)
+1. Add sign-in method > Passkey 
+1. "Sign in faster with your face, fingerprint, or PIN" > Next 
+1. "Setting up your passkey..." > Next
+1. When prompted to "Add a passkey", select ot save it in Passwords app and Touch ID to Save Passke<
+1. After your passkey is created you will be prompted to name your passkey so enter a name for it or just leave name as is and click Next and wait for passkey to be created
+1. Next time you login to work Microsoft account select your pass key as authentication method
+
+## Onboarding Device - macOS Microsoft Defender
+
+1. Download Installation package (wdav.pkg) and Onboarding package (GatewayWindowsDefenderATPOnboardingPackage.zip)
+1. Transfer both packages to your macOS device and extract when needed.
+1. You should have local admin privileges on the device
+1. Klick on installation package to install it
+1. When prompted open system settings and enable Microsoft Defender Endpoint Security Extension and Microsoft Defedender Network Extension and confirm with password or fingerprint, also when prompted Allow Defender to Filter Network Content
+1. Open System settings app > Privacy and Security > Full Disk Access
+1. Enable Microsoft Defender and Microsoft Defender Endpoint Security Extension
+1. Open Terminal app and navigate to location of Onboarding package
+1. Start Onboarding package with this command: "sudo bash  MicrosoftDefenderATPOnboardingMacOs.sh", when asked confirm with password
+1. After onboarding Microsoft Defender it should have a check next to it, which means it is onboarded
+
 
 ## Onboarding User - Windows Server Active Directory + Microsoft Entra (Microsoft hybrid environment)
 
