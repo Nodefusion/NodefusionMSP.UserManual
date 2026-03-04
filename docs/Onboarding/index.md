@@ -130,10 +130,10 @@ Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-u
 1. Prerequisite: be logged int with your Apple account on your device in System Settings app
 1. Open Web Browser (Safari) link [https://mysignins.microsoft.com/security-info](https://mysignins.microsoft.com/security-info)
 1. Log in with your work account and TAP (given to you by your administrator)
-1. Add sign-in method > Passkey 
-1. "Sign in faster with your face, fingerprint, or PIN" > Next 
+1. Add sign-in method > Passkey
+1. "Sign in faster with your face, fingerprint, or PIN" > Next
 1. "Setting up your passkey..." > Next
-1. When prompted to "Add a passkey", select ot save it in Passwords app and Touch ID to Save Passke<
+1. When prompted to "Add a passkey", select ot save it in Passwords app and Touch ID to Save Passkey
 1. After your passkey is created you will be prompted to name your passkey so enter a name for it or just leave name as is and click Next and wait for passkey to be created
 1. Next time you login to work Microsoft account select your pass key as authentication method
 
