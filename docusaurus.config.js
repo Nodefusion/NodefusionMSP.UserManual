@@ -168,9 +168,9 @@ const config = {
         ],
       },
       algolia: {
-        appId: 'XB6UFR99SC',
-        apiKey: '70ef91ad82fe7b97fe24c5c703564c2a',
-        indexName: 'msp-manual-nodefusion',
+        appId: '72YKQ1G2KO',
+        apiKey: '00833904618d54e6fb3e9094b9847d5f',
+        indexName: 'Nodefusion MSP User Manual',
         insights: true,
       },
       colorMode: {
