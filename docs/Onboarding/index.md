@@ -103,6 +103,38 @@
 1. Login to Microsoft Defender and give it required permissions (if already logged in, organizational account account should be present, just select it)
 1. Open Outlook and Teams app, check if auto logged in (if already logged in with organizational account account should be present, just select it)
 
+## Onboarding Device - Android Personally-owned devices with work profile (web enrollment)
+
+Requirement - have an Android device with a personal Google account (@gmail.com) configured in the Google Play Store.
+
+1. Open a web browser on your Android device and navigate to https://aka.ms/enrollmyandroid.
+
+1. Sign in with your organization account and complete the Microsoft sign-in process.
+
+1. On the "How to set up your device" page, select Get started.
+
+1. Review the information about the work profile and select Continue / Next when prompted.
+
+1. Accept the creation of the Android Work Profile. The work profile keeps business applications and data separate from personal applications and data.
+
+1. Select Accept and continue to create the work profile on the device.
+
+1. Wait while Android configures the work profile and installs the required work components.
+
+1. When prompted, review the Work Profile information screen and select Got it.
+
+1. Return to the enrollment portal and complete the device registration by selecting Register your device.
+
+1. If prompted, install and open the Microsoft Intune Company Portal application.
+
+1. Sign in to Intune Company Portal using your organization account.
+
+1. Complete the device registration by selecting Register and following the remaining prompts.
+
+1. Wait for the compliance checks to finish and for required applications to be installed.
+
+1. On "Your new work setup" slick on "Got it"
+
 ## Onboarding Device - iOS web based enrollment
 
 Reference: [Set up web based device enrollment](https://learn.microsoft.com/en-us/mem/intune-service/enrollment/web-based-device-enrollment-ios)
