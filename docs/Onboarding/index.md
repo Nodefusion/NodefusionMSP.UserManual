@@ -105,7 +105,8 @@
 
 ## Onboarding Device - Android Personally-owned devices with work profile (web enrollment)
 
-Requirement - have an Android device with a personal Google account (@gmail.com) configured in the Google Play Store.
+1. Prerequisite - Have working personal Android device with Google Account logged in Google Play Store
+1. Prerequisite - [Microsoft Authenticator on Android](https://msp-manual.nodefusion.com/Onboarding/#onboarding-microsoft-authenticator-on-android)
 1. Open a web browser on your Android device and navigate to https://aka.ms/enrollmyandroid.
 1. Sign in with your organization account and complete the Microsoft sign-in process.
 1. On the "How to set up your device" page, select Get started.
