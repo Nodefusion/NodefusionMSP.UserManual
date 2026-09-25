@@ -70,10 +70,11 @@
 1. Let's secure your device > Continue
 1. "Register your device" > Register
 1. Enter your existing Android device PIN/password to complete registration and phone-based passwordless sign-in
-1. Open Microft authenticator, select your Microsft account on the list and check if Passwordless sign-in is enabled, if NOT enable it to be able to login with passwordless sign in.
-1. In Microsoft Authenticator, select your Microsoft ompany account.
+1. Open Microsoft authenticator, select your Microsoft account on the list and check if Passwordless sign-in is enabled, if NOT enable it to be able to login with passwordless sign in.
+1. In Microsoft Authenticator, select your Microsoft company account.
 1. Select Set up Passwordless sign-in requests.
-1. Follow the instructions in the app to finish registering the account for passwordless phone sign-in.
+1. Follow the [instructions](https://support.microsoft.com/en-us/accounts-billing/security/how-to-go-passwordless-with-your-microsoft-account) in the app to finish registering the account for passwordless phone sign-in.
+ 
       
 
 ## Onboarding Device - Android Corporate-owned, Fully managed user devices
